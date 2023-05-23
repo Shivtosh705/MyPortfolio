@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/caf657349f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi,I'm <span> Shivtosh</span><br> Mishra</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------About------------- --------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pic1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a highly skilled and analytical problem-solver who is passionate about technology and
+                        innovation. I have understanding of programming languages, software and website design
+                        principles, and development methodologies, and constantly staying up-to-date with the latest
+                        trends and technologies in the industry.
+                       </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Bachelor of technology in Computer Science from United College of Engineering and Management</li>
+                            <li><span>2016</span><br>12th Grade(CBSE) from Imperial Public School</li>
+                            <li><span>2013</span><br>10th Grade(CBSE) from Imperial Public School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------Services------------------------------------------------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web designer, responsible for big-picture decisions, like the menus listed on the site, and smaller details, like which fonts, colors, and graphics to use.</p>
+                 <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>As a UI/UX designer, create user-friendly interfaces that enable users to understand how to use complex technical products.</p>
+                 <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developer</h2>
+                    <p>As a app developer, specializes in designing, creating, and maintaining software applications for mobile devices, such as smartphones and tablets, possess expertise in programming language.</p>
+                 <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------Portfolio------------------------------------------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/weather.jpg">
+                     <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>The weather app is a web application built with HTML, CSS, and JavaScript. It allows users to enter a location and retrieves real-time weather information. With a clean and intuitive design, it dynamically updates weather details like temperature and conditions. The app provides a user-friendly experience for staying informed about the current weather.</p>
+                     <a href="https://lustrous-mousse-df1d72.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/netflix1.png" >
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>The Netflix clone is a visually appealing website designed using HTML and CSS. It replicates the popular streaming platform's user interface, featuring a sleek layout, vibrant colors, and responsive design. With similar functionalities such as browsing and streaming movies and TV shows, it offers users a familiar experience akin to the original Netflix website.</p>
+                     <a href="https://hmzakd.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/LandingPage.png" >
+                    <div class="layer">
+                        <h3>Modern Landing Page</h3>
+                        <p>The modern landing page showcases a sleek design using HTML and CSS. With a clean and intuitive layout, it captivates visitors with stunning visuals and engaging content. Seamless navigation guides users to key sections and a prominent call-to-action button encourages conversions. It leverages responsive design for optimal viewing on various devices, providing a delightful user experience.</p>
+                     <a href="https://sitevisible.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------Contact------------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:shivtoshmishra005@gmail.com"><i class="fa-solid fa-envelope"></i>shivtoshmishra005@gmail.com</a></p>
+                    <p><a href="tel:+917905735433"><i class="fa-solid fa-phone"></i>7905735433</a></p>
+                    
+                   
+                <div class="social-icons">
+                    <a target="_blank" href="https://github.com/Shivtosh705"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ShivtoshMishra/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+                <a href="./images/myCV.pdf" download class="btn btn2">Download CV</a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
